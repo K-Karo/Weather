@@ -22,38 +22,6 @@ export const Forcast = styled.div`
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 `
-export const Time = styled.div`
-    position: absolute;
-    height: 100px;
-    width: 50%;
-    border: 1px solid #ccc;
-    top: 50px;
-    left: 25%;
-    background-color: Lavender;
-    border-radius: 30px 30px 0px 0px;
-`
-export const T = styled.div`
-    position: absolute;
-    height: 70px;
-    width: 30%;
-    border: none;
-    top: 30px;
-    left: 10%;
-    background-color: Lavender;
-    font-size: 25px;
-    color: Midnightblue;
-`
-export const D = styled.div`
-    position: absolute;
-    height: 70px;
-    width: 30%;
-    border: none;
-    top: 30px;
-    right: 10%;
-    background-color: Lavender;
-    font-size: 25px;
-    color: Midnightblue;
-`
 export const Information = styled.div`
     position: absolute;
     height: 350px;
@@ -62,23 +30,6 @@ export const Information = styled.div`
     top: 200px;
     left: 25%;
     background-color: white;
-`
-export const Div = styled.div`
-    position: absolute;
-    top: 10px;
-    color: white;
-`
-export const PrimaryButton = styled.button`
-    position: absolute;
-    top: 40%;
-    height: 20%;
-    left: 40%;
-    width: 20%;
-    border: 2px solid gray;
-    padding: 5px;
-    border-radius: 25px;
-    font-size: 20px;
-    color: LightSteelBlue;
 `
 export const Input = styled.input`
     position: absolute;
@@ -96,16 +47,6 @@ export const Input = styled.input`
     &:focus {
         border: 3px solid DarkOrange;
     }
-`
-export const Button = styled.button`
-    position: absolute;
-    top: 15px;
-    right: 10%;
-    height: 40px;
-    width: 10%;
-    border-radius: 10px;
-    border: none;
-    border: 2px solid gray;
 `
 export const NameContainer = styled.div`
     position: absolute;
@@ -240,6 +181,7 @@ export const OneDayAfter = styled.div`
     top: 10px;
     height: 100px;
     width: 100%;
+    background-color: transparent;
 `
 export const TwoDaysAfter = styled.div`
     position: relative;
@@ -297,4 +239,11 @@ export const Icon = styled.div`
     height: 100%;
     width: 50%;
     background-color: transparent;
+`
+export const DailyTemp = styled.div`
+    position: absolute;
+    top: 40px;
+    font-size: 12px;
+    font-weight: bold;
+    left: 120px;
 `

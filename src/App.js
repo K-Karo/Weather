@@ -1,9 +1,14 @@
-import React, {useState} from 'react'
-import InputFile from "./components/InputFile"
+import React, {useState, useEffect} from 'react'
+import Weather from "./components/Weather"
+import { TiWeatherPartlySunny } from "react-icons/ti" 
 
 import './App.css';
 
 function App() {
+
+  // defining variables of weather application
+  const [weatherActivator, setWeatherActivator] = useState(false);
+  const [weatherButtonHide, setWeatherButtonHide] = useState(true);
   const [city, setCity] = useState("Madrid");
   const [weather, setWeather] = useState({});
   const [time, setTime] = useState(false)
@@ -14,11 +19,11 @@ function App() {
   const [lon, setLon] = useState("-3.7026");
   const [infoGeography, setInfoGeography] = useState(false);
   const [dailyForcast, setDailyForcast] = useState(false);
+
   const [unixTime, setUnixTime] = useState("");  
   const [day, setDay] = useState("");
   const [month, setMonth] = useState("");
   const [year, setYear] = useState("");
-
   const [unixTimeOne, setUnixTimeOne] = useState("");  
   const [dayOne, setDayOne] = useState("");
   const [monthOne, setMonthOne] = useState("");
@@ -44,7 +49,8 @@ function App() {
 
   return (
     <div className="App">
-      <InputFile
+      <Weather
+        weatherActivator={weatherActivator} setWeatherActivator={setWeatherActivator}
         city={city} setCity={setCity}
         weather={weather} setWeather={setWeather}
         time={time} setTime={setTime}
@@ -81,7 +87,7 @@ function App() {
         unixTimeSeven={unixTimeSeven} setUnixTimeSeven={setUnixTimeSeven}  
         daySeven={daySeven} setDaySeven={setDaySeven}
         monthSeven={monthSeven} setMonthSeven={setMonthSeven}>
-      </InputFile>
+      </Weather>
     </div>
   );
 }

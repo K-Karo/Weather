@@ -1,15 +1,89 @@
 import styled from "styled-components"
 
+export const MainMenuBtn = styled.button`
+ position: absolute;
+ top: 2px;
+ height: 46px;
+ right: 2%;
+ width: 10%;
+ border: none;
+ border-radius: 10px;
+ color: aliceblue;
+ background-color: DarkSlateBlue;
+ &:hover {
+  background: white;
+  border: 3px solid DarkSlateBlue;
+  color: DarkSlateBlue;
+}
+&:active {     
+  background: white;
+  border: 3px solid LightSteelBlue;
+  color: LightSteelBlue;    
+}
+@media screen and (max-width: 499px) {
+  right: 1%;
+  width: 15%;
+}
+`
+export const TodoGitBtn = styled.button`
+ position: absolute;
+ top: 2px;
+ height: 46px;
+ left: 2%;
+ width: 10%;
+ border: none;
+ border-radius: 10px;
+ color: aliceblue;
+ background-color: DarkSlateBlue;
+ &:hover {
+  background: white;
+  border: 3px solid DarkSlateBlue;
+  color: DarkSlateBlue;
+}
+&:active {     
+  background: white;
+  border: 3px solid LightSteelBlue;
+  color: LightSteelBlue;    
+}
+@media screen and (max-width: 499px) {
+  left: 1%;
+  width: 15%;
+}
+`
 export const Container = styled.div`
     position: absolute;
     height: 780px;
     width: 50%;
-    border: 1px solid #ccc;
-    top: 10px;
+    border: 3px solid DarkOrange;
+    border-radius: 40px;
+    top: 50px;
     left: 25%;
     background-color: DarkBlue;
     background-image: linear-gradient(LightCyan, PowderBlue);
-    border-radius: 0px 0px 0px 0px;
+    @media screen and (max-width: 1400px) {
+      left: 20%;
+      width: 60%;
+    }
+    @media screen and (max-width: 1200px) {
+      left: 15%;
+      width: 70%;
+    }
+    @media screen and (max-width: 1000px) {
+      left: 5%;
+      width: 90%;
+    }
+    @media screen and (max-width: 900px) {
+      top: 50px;
+      height: 1300px;
+      left: 10%;
+      width: 80%;
+    }
+    @media screen and (max-width: 499px) {
+      top: 70px;
+      height: 1300px;
+      left: 3%;
+      width: 94%;
+    }
 `
 export const Forcast = styled.div`
     position: absolute;
@@ -21,6 +95,11 @@ export const Forcast = styled.div`
     text-align: center;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    @media screen and (max-width: 900px) {
+      top: 27%;
+      left: 5%;
+      width: 90%;
+    }
 `
 export const Information = styled.div`
     position: absolute;
@@ -34,18 +113,49 @@ export const Information = styled.div`
 export const Input = styled.input`
     position: absolute;
     top: 10px;
-    height: 50px;
+    height: 51px;
     left: 20%;
-    width: 60%;
-    border: 2px solid gray;
-    text-align: 40px;
-    padding: 0px 20px;
-    border-radius: 20px;
+    width: 50%;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 20px 0px 0px 20px;
     font-size: 20px;
     outline : none;
     color: MidnightBlue;
     &:focus {
-        border: 3px solid DarkOrange;
+        border: 1px solid DarkOrange;
+    }
+    @media screen and (max-width: 900px) {
+      left: 5%;
+      width: 70%;
+    }
+`
+export const InputButton = styled.button`
+    position: absolute;
+    top: 10px;
+    height: 55px;
+    right: 20%;
+    width: 10%;
+    border: 1px solid gray;
+    text-align: center;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 20px;
+    outline : none;
+    background-color: DarkOrange;
+    color: white;
+    &:hover {
+      background: white;
+      border: 1px solid DarkOrange;
+      color: DarkOrange;
+    }
+    &:active {     
+      background: white;
+      border: 1px solid LightSteelBlue;
+      color: LightSteelBlue;    
+    }
+    @media screen and (max-width: 900px) {
+      right: 5%;
+      width: 20%;
     }
 `
 export const NameContainer = styled.div`
@@ -57,8 +167,8 @@ export const NameContainer = styled.div`
 `
 export const Pname = styled.div`
     position: relative;
-    top: 10px;
-    font-size: 17px;
+    top: -50px;
+    font-size: 40px;
     font-weight: bold;
     align-items: center;
 `
@@ -71,8 +181,8 @@ export const TodayContainer = styled.div`
 `
 export const Today = styled.div`
     position: relative;
-    top: 10px;
-    font-size: 17px;
+    top: 0px;
+    font-size: 25px;
     font-weight: bold;
     align-items: center;
 `
@@ -89,6 +199,9 @@ export const Ptemp = styled.div`
     font-size: 17px;
     font-weight: bold;
     align-items: center;
+    @media screen and (max-width: 389px) {
+      font-size: 12px;
+    }
 `
 export const HumidityContainer = styled.div`
     position: absolute;
@@ -103,6 +216,9 @@ export const Phumidity = styled.div`
     font-size: 17px;
     font-weight: bold;
     align-items: center;
+    @media screen and (max-width: 389px) {
+      font-size: 12px;
+    }
 `
 export const TempContainer = styled.div`
     position: absolute;
@@ -118,6 +234,9 @@ export const PtempMax = styled.div`
     font-size: 17px;
     font-weight: bold;
     align-items: center;
+    @media screen and (max-width: 389px) {
+      font-size: 12px;
+    }
 `
 export const PtempMin = styled.div`
     position: absolute;
@@ -125,6 +244,9 @@ export const PtempMin = styled.div`
     font-size: 17px;
     font-weight: bold;
     right: 25px;
+    @media screen and (max-width: 389px) {
+      font-size: 12px;
+    }
 `
 export const TempHigh = styled.div`
     position: absolute;
@@ -157,6 +279,9 @@ export const Pdescription = styled.div`
     left: 20px;
     font-size: 17px;
     font-weight: bold;
+    @media screen and (max-width: 389px) {
+      font-size: 12px;
+    }
 `
 export const Picon = styled.div`
     position: absolute;
@@ -175,6 +300,11 @@ export const DailyForcast = styled.div`
     right: 1%;
     background-color: transparent;
     text-align: center;
+    @media screen and (max-width: 900px) {
+      top: 600px;
+      left: 5%;
+      width: 90%;
+    }
 `
 export const OneDayAfter = styled.div`
     position: relative;
@@ -231,6 +361,9 @@ export const Text = styled.div`
     left: 20px;
     font-size: 17px;
     font-weight: bold;
+    @media screen and (max-width: 389px) {
+      font-size: 14px;
+    }
 `
 export const Icon = styled.div`
     position: absolute;
@@ -245,5 +378,8 @@ export const DailyTemp = styled.div`
     top: 40px;
     font-size: 12px;
     font-weight: bold;
-    left: 120px;
+    left: 30%;
+    @media screen and (max-width: 389px) {
+      font-size: 9px;
+    }
 `

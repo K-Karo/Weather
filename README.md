@@ -1,6 +1,6 @@
 # Weather application
 
-- This application uses the weather API from openweathermap. In the first step, current weather information fetch using axios, by entering the city name. In the next step, the entered city name matches with its latitude and longitude data to display 7 days forecast of the proposed city.
+This application uses the weather API from openweathermap. In the first step, current weather information fetch using axios, by entering the city name. In the next step, the entered city name matches with its latitude and longitude data to display 7 days forecast of the proposed city.
 
 # installation guide: 
 

@@ -4,8 +4,8 @@ This application uses the weather API from openweathermap. In the first step, cu
 
 installation guide: 
 
-- To create the application run:
-  npx create-react-app Weather
+To create the application run:
+- npx create-react-app Weather
 
 - To download styled components run:
   npm install --save styled-components
